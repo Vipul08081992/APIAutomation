@@ -11,3 +11,10 @@ def payload_create_booking():
         "additionalneeds": "Breakfast"
     }
     return payload
+
+def payload_create_token():
+    payload={
+        "username" : "admin",
+        "password" : "password123"
+    }
+    return payload
