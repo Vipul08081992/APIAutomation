@@ -14,8 +14,8 @@ class Test_create_booking:
         print(response.json())
         verify_response_key_not_none(response.json()["bookingid"])
         verify_status_code(actual_code=response.status_code,expected_code=200)
-        booking_id=response.json()["bookingid"]
-        print(booking_id)
+        return response.json()["bookingid"]
+
 
 #Test2: without payload
     @pytest.mark.negative
